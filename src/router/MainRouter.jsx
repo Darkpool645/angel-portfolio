@@ -9,6 +9,7 @@ const LandingPage = lazy(() => import("@/screens/LandingPage.jsx"));
 const AboutPage = lazy(() => import("@/screens/AboutPage.jsx"));
 const ProjectsPage = lazy(() => import("@/screens/ProjectsPage.jsx"));
 const ContactPage = lazy(() => import("@/screens/ContactPage.jsx"));
+const ExperiencePage = lazy(() => import("@/screens/ExperiencePage.jsx"));
 const NotFoundPage = lazy(() => import("@/screens/NotFoundPage.jsx"));
 
 const router = createBrowserRouter([
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
             { path: "/about", element: <AboutPage />},
             { path: "/projects", element: <ProjectsPage />},
             { path: "/contact", element: <ContactPage />},
+            { path: "/experience", element: <ExperiencePage />},
             { path: "*", element: <NotFoundPage /> },
     ]},
 ]);
