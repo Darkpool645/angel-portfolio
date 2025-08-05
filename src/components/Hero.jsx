@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowDownTrayIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
+import { ArrowDownTrayIcon, ArrowRightIcon, EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import pin from "@/assets/pin.avif";
-import github from "@/assets/svgs/github.svg";
-import linkedin from "@/assets/svgs/linkedin.svg";
-import mail from "@/assets/svgs/mail.svg";
-import phone from "@/assets/svgs/phone.svg";
+import GitHubIcon from "@/assets/svgs/GitHubIcon.jsx";
+import LinkedInIcon from "@/assets/svgs/LinkedInIcon.jsx";
 
 const roles = ["UI/UX Designer", "Software Developer", "Full Stack Engineer", "Coffee Lover"];
 
@@ -33,7 +31,7 @@ const Hero = () => {
     },[]);
 
     return (
-        <section className={"h-screen flex items center justify-center w-full py-12"}>
+        <section className={"min-h-screen flex items center justify-center w-full py-12"}>
             <div className={"max-w-6xl w-full flex flex-col md:flex-row items-center gap-12"}>
                 <div className={"flex-1 text-center md:text-left"}>
                     <motion.h1 className={"text-5xl md:text-6xl font-bold dark:text-white"} initial={"hidden"} animate={"visible"} custom={0} variants={fadeInUp}>
@@ -63,16 +61,16 @@ const Hero = () => {
                     </motion.div>
                     <motion.div className={"mt-8 flex gap-4 justify-center md:justify-start transition-colors duration-300"} initial={"hidden"} animate={"visible"} custom={0.8} variants={fadeInUp}>
                         <a href={"https://github.com/Darkpool645"} target={"_blank"} className={"dark:bg-[oklch(.279_.041_260.031)] bg-gray-100 rounded-full p-2 flex items-center justify-center"}>
-                            <img src={github} className={"size-3 dark:text-white"} />
+                            <GitHubIcon style={"size-4 dark:text-white"}/>
                          </a>
                          <a href={"https://www.linkedin.com/in/angel-gabriel-camargo-silva/"} target={"_blank"} className={"dark:bg-[oklch(.279_.041_260.031)] bg-gray-100 rounded-full p-2 flex items-center justify-center"}>
-                            <img src={linkedin} className={"size-3 dark:text-white"} />
+                         <LinkedInIcon style={"size-4 dark:text-white"}/>
                          </a>
                          <a href={"mailto:angel_camargo2020@outlook.com"} target={"_blank"} className={"dark:bg-[oklch(.279_.041_260.031)] bg-gray-100 rounded-full p-2 flex items-center justify-center"}>
-                            <img src={mail} className={"size-3 dark:text-white"} />
+                            <EnvelopeIcon className={"size-4 dark:text-white"} />
                          </a>
                          <a href={"tel:+527775539274"} target={"_blank"} className={"dark:bg-[oklch(.279_.041_260.031)] bg-gray-100 rounded-full p-2 flex items-center justify-center"}>
-                            <img src={phone} className={"size-3 dark:invert-0 invert"} />
+                            <PhoneIcon className={"size-4 dark:text-white"} />
                          </a>
                     </motion.div>
                 </div>
