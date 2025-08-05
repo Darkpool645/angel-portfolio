@@ -10,7 +10,7 @@ const PublicLayout = () => {
         <div className={"relative min-h-screen bg-white dark:bg-[#040315] transition-colors duration-300"}>
             {theme === "dark" && (
                 <>
-                    <video className={"absolute rotate-180 top-[-340px] left-0 w-[700px] lg:w-full lg:h-[700px] " +
+                    <video className={"fixed rotate-180 top-[-340px] left-0 w-[700px] lg:w-full lg:h-[700px] " +
                         "object-cover overflow-hidden opacity-70"} src={blackhole} autoPlay loop playsInline muted/>
                     <StarsCanvas />
                 </>
