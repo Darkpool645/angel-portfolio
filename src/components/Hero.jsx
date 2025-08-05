@@ -5,7 +5,7 @@ import pin from "@/assets/pin.avif";
 import GitHubIcon from "@/assets/svgs/GitHubIcon.jsx";
 import LinkedInIcon from "@/assets/svgs/LinkedInIcon.jsx";
 
-const roles = ["UI/UX Designer", "Software Developer", "Full Stack Engineer", "Coffee Lover"];
+const roles = ["UI/UX Designer", "Software Developer", "Full Stack Software Engineer", "Coffee Lover"];
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 40 },
@@ -20,7 +20,7 @@ const fadeInUp = {
     }),
 };
 
-const Hero = () => {
+const Hero = ({ onViewWorkClick }) => {
     const [index, setIndex] = useState(0);
 
     useEffect(() => {
@@ -31,7 +31,7 @@ const Hero = () => {
     },[]);
 
     return (
-        <section className={"min-h-screen flex items center justify-center w-full py-12"}>
+        <section className={"min-h-screen flex items center justify-center w-full pt-12 pb-10"}>
             <div className={"max-w-6xl w-full flex flex-col md:flex-row items-center gap-12"}>
                 <div className={"flex-1 text-center md:text-left"}>
                     <motion.h1 className={"text-5xl md:text-6xl font-bold dark:text-white"} initial={"hidden"} animate={"visible"} custom={0} variants={fadeInUp}>
@@ -50,7 +50,7 @@ const Hero = () => {
                         A passionate developer with expertise in React, Tailwind CSS and dabatase technologies.
                     </motion.p>
                     <motion.div className={"mt-8 flex gap-4 justify-center md:justify-start"} initial={"hidden"} animate={"visible"} custom={0.6} variants={fadeInUp}>
-                        <button className={"flex items-center justify-between gap-2 px-6 py-3 bg-black dark:bg-white dark:text-black text-white rounded-xl"}>
+                        <button onClick={onViewWorkClick} className={"flex items-center justify-between gap-2 px-6 py-3 bg-black dark:bg-white dark:text-black text-white rounded-xl"}>
                             View My Work
                             <ArrowRightIcon className={"size-4"} />
                         </button>

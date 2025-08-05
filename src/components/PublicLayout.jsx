@@ -6,6 +6,7 @@ import { useTheme } from "@/context/ThemeContext.jsx";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpIcon } from "@heroicons/react/24/outline";
+import Footer from "@/components/Footer.jsx";
 
 const PublicLayout = () => {
   const { theme } = useTheme();
@@ -43,7 +44,7 @@ const PublicLayout = () => {
       <main className={"relative z-10 text-black dark:text-white min-h-screen"}>
         <Outlet />
       </main>
-
+      <Footer />
       <AnimatePresence>
         {showScrollTop && (
           <motion.button
@@ -53,9 +54,9 @@ const PublicLayout = () => {
             exit={{ opacity: 0, y: 50 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
             onClick={scrollToTop}
-            className={"fixed bottom-6 right-6 z-50 p-3 rounded-full bg-white dark:bg-[#1f1f1f] shadow-lg dark:shadow-white/10 hover:scale-110 transition-transform"}
+            className={"cursor-pointer fixed bottom-6 right-6 z-50 p-3 rounded-full bg-[#1f1f1f] dark:bg-white shadow-lg dark:shadow-white/10 hover:scale-110 transition-transform"}
           >
-            <ArrowUpIcon className={"h-5 w-5 text-black dark:text-white"} />
+            <ArrowUpIcon className={"h-5 w-5 text-white dark:text-black"} />
           </motion.button>
         )}
       </AnimatePresence>

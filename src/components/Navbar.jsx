@@ -38,7 +38,7 @@ const Navbar = () => {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="flex fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-6xl z-50 rounded-xl py-3 px-4 bg-white/20 dark:bg-[#050816]/20 backdrop-blur-sm justify-between items-center"
+      className="flex fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-6xl z-50 rounded-xl py-3 px-4 bg-white/20 dark:bg-[#050816]/20 backdrop-blur-sm justify-between items-center shadow-md"
     >
       <motion.div variants={childVariants} className="flex items-center">
         <Link to="/" className="dark:text-white text-xl font-bold">
