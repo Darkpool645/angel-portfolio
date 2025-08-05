@@ -4,6 +4,7 @@ import FeaturedProjects from "@/components/FeaturedProjects.jsx";
 import Hero from "@/components/Hero.jsx";
 import TechSkills from "@/components/TechSkills.jsx";
 import Achievements from "@/components/Achievements.jsx";
+import Footer from "@/components/Footer.jsx";
 import { useTheme } from "@/context/ThemeContext.jsx";
 
 const LandingPage = () => {
@@ -19,6 +20,7 @@ const LandingPage = () => {
             </div>
             <TechSkills />
             <Achievements />
+            <Footer />
         </div>
     )
 };

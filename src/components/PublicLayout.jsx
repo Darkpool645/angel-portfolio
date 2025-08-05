@@ -6,7 +6,6 @@ import { useTheme } from "@/context/ThemeContext.jsx";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpIcon } from "@heroicons/react/24/outline";
-import Footer from "@/components/Footer.jsx";
 
 const PublicLayout = () => {
   const { theme } = useTheme();
@@ -44,7 +43,6 @@ const PublicLayout = () => {
       <main className={"relative z-10 text-black dark:text-white min-h-screen"}>
         <Outlet />
       </main>
-      <Footer />
       <AnimatePresence>
         {showScrollTop && (
           <motion.button

@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer.jsx";
+
 const NotFoundPage = () => {
     return (
         <div className={"grid min-h-dvh place-items-center px-6 py-24 sm:py-32 lg:px-8"}>
@@ -15,6 +17,7 @@ const NotFoundPage = () => {
                     </a>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 };
