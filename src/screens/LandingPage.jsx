@@ -12,7 +12,7 @@ const LandingPage = () => {
     const { theme } = useTheme();
     const projectsRef = useRef(null);
     return (
-        <div className={"min-h-screen flex flex-col justify-center items-center"}>
+        <div className={"min-h-screen flex flex-col justify-center items-center px-8 sm:px-4"}>
             <motion.div id={"scroll-indicator"} style={{scaleX: scrollYProgress, position: "fixed", top: 0, left: 0, right: 0, height: 5, originX: 0, backgroundColor: theme === "dark" ? "#fff": "#64748b"}}/>
             <Hero onViewWorkClick={() => projectsRef.current?.scrollIntoView({ behavior: "smooth"})}/>
             <div ref={projectsRef} className={"w-full"}>
