@@ -40,7 +40,7 @@ const PublicLayout = () => {
         </>
       )}
       <Navbar />
-      <main className={"relative z-10 text-black dark:text-white min-h-screen"}>
+      <main className={"relative z-10 text-black dark:text-white min-h-screen pt-[80px]"}>
         <Outlet />
       </main>
       <AnimatePresence>
