@@ -53,8 +53,8 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className={"mt-8 border-t-[0.5px] border-gray-500 pt-4"}>
-                    <div className={"flex flex-col md:flex-row justify-between items-center gap-4"}>
-                        <span className={"text-sm text-[#90a1b9]"}>
+                    <div className={"flex flex-col md:flex-row justify-center items-center gap-4"}>
+                        <span className={"sr-only"}>
                         Design inspired by <a href="https://github.com/achyut21" target="_blank" rel="noopener noreferrer">Achyut Katiyar</a>
                         </span>
                         <div className={"text-sm text-[#90a1b9] flex items-center gap-1.5"}>
