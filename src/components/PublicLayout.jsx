@@ -29,7 +29,7 @@ const PublicLayout = () => {
       {theme === "dark" && (
         <>
           <video
-            className={"fixed rotate-180 top-[-200px] sm:top-[-170px] md:top-[-225px] lg:top-[-280px] left-1/2 -translate-x-1/2 w-[400px] sm:w-[600px] md:w-[800px] lg:w-[1000px] h-auto object-cover opacity-70 overflow-hidden z-0"}
+            className={"fixed rotate-180 top-[-170px] sm:top-[-170px] md:top-[-225px] lg:top-[-280px] left-1/2 -translate-x-1/2 w-[400px] sm:w-[600px] md:w-[800px] lg:w-[1000px] h-auto object-cover opacity-70 overflow-hidden z-0"}
             src={blackhole}
             autoPlay
             loop
