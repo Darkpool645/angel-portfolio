@@ -31,7 +31,7 @@ const Hero = ({ onViewWorkClick }) => {
     },[]);
 
     return (
-        <section className={"min-h-screen flex items center justify-center w-full pt-12 pb-10"}>
+        <section className={"min-h-fit flex items-start justify-center w-full py-20 pb-20"}>
             <div className={"max-w-6xl w-full flex flex-col md:flex-row items-center gap-12"}>
                 <div className={"flex-1 text-center md:text-left"}>
                     <motion.h1 className={"text-3xl sm:text-5xl font-bold dark:text-white"} initial={"hidden"} animate={"visible"} custom={0} variants={fadeInUp}>
@@ -75,7 +75,7 @@ const Hero = ({ onViewWorkClick }) => {
                     </motion.div>
                 </div>
                 <motion.div className={"flex justify-center"} initial={{ scale: 0, opacity: 0 }} animate={{ scale: 1, opacity: 1}} transition={{ duration: 0.4, delay: 0.9, ease: "easeOut"}}>
-                    <img src={pin} alt="Profile Icon" className=" w-96 h-96 object-cover rounded-full shadow-lg" />
+                    <img src={pin} alt="Profile Icon" className="size-72 sm:size-96 object-cover rounded-full shadow-lg" />
                 </motion.div>
             </div>
         </section>
