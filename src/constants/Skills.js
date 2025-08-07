@@ -10,6 +10,7 @@ export const skills = {
       { name: 'SQL', category: 'Languages', logoKey: 'mysql' },
       { name: 'PHP', category: 'Languages', logoKey: 'php' },
       { name: 'R', category: 'Languages', logoKey: 'r'},
+      { name: 'C#', category: 'Languages', logoKey: 'csharp' }
     ],
     'Frameworks/Libraries': [
       { name: 'React.js', category: 'Frameworks/Libraries', logoKey: 'react' },

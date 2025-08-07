@@ -3,7 +3,6 @@ import { motion, useScroll } from "framer-motion";
 import FeaturedProjects from "@/components/FeaturedProjects.jsx";
 import Hero from "@/components/Hero.jsx";
 import TechSkills from "@/components/TechSkills.jsx";
-import Achievements from "@/components/Achievements.jsx";
 import Footer from "@/components/Footer.jsx";
 import { useTheme } from "@/context/ThemeContext.jsx";
 
@@ -19,7 +18,6 @@ const LandingPage = () => {
                 <FeaturedProjects />
             </div>
             <TechSkills />
-            <Achievements />
             <Footer />
         </div>
     )

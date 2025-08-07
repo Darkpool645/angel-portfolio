@@ -63,7 +63,7 @@ const TechSkills = () => {
             </div>
             {categories.map((category) => (
                 <TabsContent key={category} value={category} className={"w-full"}>
-                    <div className={"bg-muted/50 dark:bg-muted-dark/50 rounded-lg py-6"}>
+                    <div className={"bg-muted/50 dark:bg-muted-dark/50 rounded-lg py-6 px-4"}>
                         <div className={"flex flex-wrap gap-3 justify-center"}>
                             {skills[category].map((skill, index) => (
                                 <motion.div key={skill.name} initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.3, delay: index * 0.05 }}>

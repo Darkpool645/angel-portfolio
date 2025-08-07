@@ -27,7 +27,7 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li>
-                                <a href="/" target={"_blank"} className={"text-sm text-[#62748e] hover:text-[#e2e8f0] transition-colors flex items-center gap-1"}>
+                                <a href="/AngelGabrielCamargoSilvaResume.pdf" target={"_blank"} className={"text-sm text-[#62748e] hover:text-[#e2e8f0] transition-colors flex items-center gap-1"}>
                                     Resume
                                     <ArrowTopRightOnSquareIcon className={"size-4"} />
                                 </a>
