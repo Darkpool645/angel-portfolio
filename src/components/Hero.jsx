@@ -54,10 +54,10 @@ const Hero = ({ onViewWorkClick }) => {
                             View My Work
                             <ArrowRightIcon className={"size-4"} />
                         </button>
-                        <button className={"px-6 py-3 border border-gray-300 rounded-xl flex gap-2 items-center justify-center"}>
+                        <a href={"/AngelGabrielCamargoSilvaResume.pdf"} target={"_blank"} className={"px-6 py-3 border border-gray-300 rounded-xl flex gap-2 items-center justify-center"}>
                             <ArrowDownTrayIcon className={"size-4 dark:text-gray-300"} />
                             Resume
-                        </button>
+                        </a>
                     </motion.div>
                     <motion.div className={"mt-8 flex gap-4 justify-center md:justify-start transition-colors duration-300"} initial={"hidden"} animate={"visible"} custom={0.8} variants={fadeInUp}>
                         <a href={"https://github.com/Darkpool645"} target={"_blank"} className={"dark:bg-[oklch(.279_.041_260.031)] bg-gray-100 rounded-full p-2 flex items-center justify-center"}>
