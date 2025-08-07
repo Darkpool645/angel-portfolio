@@ -6,6 +6,7 @@ import { useTheme } from "@/context/ThemeContext.jsx";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpIcon } from "@heroicons/react/24/outline";
+import Footer from "@/components/Footer.jsx";
 
 const PublicLayout = () => {
   const { theme } = useTheme();
@@ -58,6 +59,7 @@ const PublicLayout = () => {
           </motion.button>
         )}
       </AnimatePresence>
+      <Footer />
     </div>
   );
 };
