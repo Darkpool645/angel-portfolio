@@ -4,13 +4,14 @@ import Navbar from "@/components/Navbar.jsx";
 import blackhole from "@/assets/blackhole.webm";
 import { useTheme } from "@/context/ThemeContext.jsx";
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useScroll } from "framer-motion";
 import { ArrowUpIcon } from "@heroicons/react/24/outline";
 import Footer from "@/components/Footer.jsx";
 import ScrollToTop from "@/components/ScrollToTop.jsx";
 
 const PublicLayout = () => {
   const { theme } = useTheme();
+  const { scrollYProgress } = useScroll();
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   useEffect(() => {
@@ -28,6 +29,7 @@ const PublicLayout = () => {
 
   return (
     <div className={"relative min-h-screen bg-white dark:bg-[#040315] transition-colors duration-300"}>
+      <motion.div style={{ scaleX: scrollYProgress, backgroundColor: theme === "dark" ? "#fff" : "#64748b" }} className={"fixed top-0 left-0 right-0 h-1 origin-left z-50"}/>
       {theme === "dark" && (
         <>
           <video
