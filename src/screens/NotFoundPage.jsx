@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer.jsx";
 
 const NotFoundPage = () => {
     return (
@@ -17,7 +16,6 @@ const NotFoundPage = () => {
                     </a>
                 </div>
             </div>
-            <Footer/>
         </div>
     );
 };
