@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpIcon } from "@heroicons/react/24/outline";
 import Footer from "@/components/Footer.jsx";
+import ScrollToTop from "@/components/ScrollToTop.jsx";
 
 const PublicLayout = () => {
   const { theme } = useTheme();
@@ -60,6 +61,7 @@ const PublicLayout = () => {
         )}
       </AnimatePresence>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };
