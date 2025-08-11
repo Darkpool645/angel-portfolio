@@ -7,14 +7,13 @@ export const projects = [
       "Aethergram is a decentralized social media platform that empowers users to share encrypted content without compromising privacy. Built with homomorphic encryption and IPFS, users can interact anonymously while maintaining data ownership. Features include encrypted comments, anonymous likes, and community moderation.",
     technologies: ["ZK-Proofs", "Homomorphic Encryption", "Next.js", "TypeScript", "OrbitDB", "TailwindCSS", "IPFS", "JWT"],
     achievements: [
-      "Reached 2,000+ users in the first month with zero data leaks",
       "Implemented end-to-end encryption across all user interactions",
       "Integrated zero-knowledge login to eliminate password vulnerabilities",
       "Reduced backend load by 40% using decentralized indexing"
     ],
     image: "https://i.pinimg.com/1200x/75/30/83/7530839b68fb57aae3148c61e1cc5e18.jpg",
-    github: "https://github.com/demo/aethergram",
-    liveUrl: "https://aethergram.io",
+    github: "https://github.com/Darkpool645/Aethergram",
+    // liveUrl: "https://aethergram.io",
     featured: true
   },
   {
